@@ -4,64 +4,368 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Ooriyayil Housewarming</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Ooriyayil Housewarming - A Grand Celebration</title>
   </head>
   <body>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Sekuya&display=swap");
-
-      :root {
-        --primary: #fff1d0;
-        --secondary: #fff8ec;
-        --text-main: #1d3557;
-        --text-accent: #380201;
-        --btn: #1d3557;
-        --btn-hover: #7cafc4;
-      }
-
-      body {
-        background: var(--primary);
-        color: var(--text-main);
-        font-family: "Sekuya", system-ui;
-      }
-
-      .section {
-        background: var(--secondary);
-      }
-
-      h1,
-      h2 {
-        text-align: center;
-
-        color: var(--text-accent);
-      }
-
-      p {
-        color: var(--text-main);
-      }
-
-      .button {
-        background: var(--btn);
-        color: #fff;
-        padding: 12px 20px;
-        border-radius: 6px;
-        transition: 0.3s;
-      }
-
-      .button:hover {
-        background: var(--btn-hover);
-      }
-
-      .text-box {
-        display: flex;
-        height: 100vh;
-        align-items: center;
-        justify-content: center;
-      }
-    </style>
-
-    <div class="text-box">
-      <h1>Housewarming Ceremony of Ooriyayil House</h1>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+      <div class="loader">
+        <div class="house-icon">🏠</div>
+        <div class="loading-text">Welcome to Our Home</div>
+      </div>
     </div>
+
+    <!-- Header -->
+    <header class="main-header">
+      <nav class="navbar">
+        <div class="nav-brand">
+          <i class="fas fa-home"></i>
+          <span>Ooriyayil</span>
+        </div>
+        <div class="nav-menu">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#details" class="nav-link">Details</a>
+          <a href="#location" class="nav-link">Location</a>
+          <a href="#rsvp" class="nav-link">RSVP</a>
+        </div>
+        <div class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="highlight">Welcome</span> to Our New Home
+          </h1>
+          <p class="hero-subtitle">Join us for an unforgettable housewarming celebration</p>
+          <div class="event-info">
+            <div class="info-item">
+              <i class="fas fa-calendar-alt"></i>
+              <span>December 25, 2024</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-clock"></i>
+              <span>6:00 PM Onwards</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Ooriyayil House</span>
+            </div>
+          </div>
+          <div class="hero-buttons">
+            <a href="#rsvp" class="btn btn-primary">RSVP Now</a>
+            <a href="#location" class="btn btn-secondary">View Location</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="floating-elements">
+            <div class="float-item item-1"><i class="fas fa-star"></i></div>
+            <div class="float-item item-2"><i class="fas fa-heart"></i></div>
+            <div class="float-item item-3"><i class="fas fa-home"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span>Scroll Down</span>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Our Home</h2>
+          <p class="section-subtitle">A place filled with love, laughter, and cherished memories</p>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <p>Welcome to our humble abode, where tradition meets modernity. Our new home represents not just bricks and mortar, but the dreams, aspirations, and love of our family.</p>
+            <p>Join us as we celebrate this milestone with joy, gratitude, and the warmth of community. Your presence will make this occasion truly special.</p>
+            <div class="about-stats">
+              <div class="stat">
+                <div class="stat-number">25</div>
+                <div class="stat-label">Years of Family</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">100+</div>
+                <div class="stat-label">Expected Guests</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">1</div>
+                <div class="stat-label">Beautiful Home</div>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <img src="images/house.png" alt="Our beautiful new home" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Event Details Section -->
+    <section id="details" class="details-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Event Highlights</h2>
+          <p class="section-subtitle">Everything you need to know about the celebration</p>
+        </div>
+        <div class="details-grid">
+          <div class="detail-card">
+            <div class="card-icon">
+              <i class="fas fa-pray"></i>
+            </div>
+            <h3>Pooja Ceremony</h3>
+            <p>Traditional housewarming pooja to bless our new home</p>
+          </div>
+          <div class="detail-card">
+            <div class="card-icon">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <h3>Traditional Feast</h3>
+            <p>Authentic Kerala cuisine prepared with love</p>
+          </div>
+          <div class="detail-card">
+            <div class="card-icon">
+              <i class="fas fa-music"></i>
+            </div>
+            <h3>Cultural Program</h3>
+            <p>Music, dance, and traditional performances</p>
+          </div>
+          <div class="detail-card">
+            <div class="card-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Family Gathering</h3>
+            <p>Reunite with loved ones and create new memories</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Location & Venue</h2>
+          <p class="section-subtitle">Find your way to our celebration</p>
+        </div>
+        <div class="location-content">
+          <div class="location-info">
+            <div class="venue-details">
+              <h3>Ooriyayil House</h3>
+              <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, City, State</p>
+              <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+              <p><i class="fas fa-clock"></i> December 25, 2024 - 6:00 PM onwards</p>
+            </div>
+            <div class="transport-info">
+              <h4>How to Reach</h4>
+              <div class="transport-options">
+                <div class="transport-item">
+                  <i class="fas fa-car"></i>
+                  <span>Parking Available</span>
+                </div>
+                <div class="transport-item">
+                  <i class="fas fa-bus"></i>
+                  <span>Bus Stop: 5 min walk</span>
+                </div>
+                <div class="transport-item">
+                  <i class="fas fa-train"></i>
+                  <span>Railway Station: 10 km</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2009.201794800701!2d76.82624422104777!3d9.259970055529932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwMTUnMzYuNyJOIDc2wrA0OSczMi41IkU!5e1!3m2!1sen!2sin!4v1776848623834!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section id="rsvp" class="rsvp-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">RSVP</h2>
+          <p class="section-subtitle">Let us know you'll be joining the celebration</p>
+        </div>
+        <div class="rsvp-content">
+          <div class="rsvp-form-container">
+            <form id="rsvp-form" class="rsvp-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full Name *</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number *</label>
+                  <input type="tel" id="phone" name="phone" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                  <label for="guests">Number of Guests</label>
+                  <select id="guests" name="guests">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5+">5+</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">Message (Optional)</label>
+                <textarea id="message" name="message" rows="4" placeholder="Any special notes or well wishes..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-large">Send RSVP</button>
+            </form>
+          </div>
+          <div class="rsvp-info">
+            <div class="info-card">
+              <i class="fas fa-envelope"></i>
+              <h4>Response Time</h4>
+              <p>We'll confirm your RSVP within 24 hours</p>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-gift"></i>
+              <h4>Gift Registry</h4>
+              <p>Your presence is the best gift, but if you insist...</p>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-clock"></i>
+              <h4>Last Date</h4>
+              <p>Please RSVP by December 20, 2024</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <i class="fas fa-home"></i>
+            <span>Ooriyayil Housewarming</span>
+          </div>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#details">Details</a>
+            <a href="#location">Location</a>
+            <a href="#rsvp">RSVP</a>
+          </div>
+          <div class="footer-social">
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Ooriyayil Family. Made with <i class="fas fa-heart"></i> for our loved ones.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp CTA -->
+    <div class="whatsapp-cta">
+      <a href="https://wa.me/919876543210?text=Hi! I'm excited about the housewarming ceremony." target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat on WhatsApp</span>
+      </a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="rsvp" class="section">
+      <div class="container">
+        <h2>RSVP</h2>
+        <p>Please let us know if you'll be joining us for the celebration.</p>
+        <form id="rsvp-form" class="rsvp-form">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" />
+          </div>
+          <div class="form-group">
+            <label for="guests">Number of Guests</label>
+            <select id="guests" name="guests">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5+">5+</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message (Optional)</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <button type="submit" class="cta-button">Send RSVP</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Ooriyayil Housewarming. Made with ❤️</p>
+        <p>For any queries, please contact us through WhatsApp or email.</p>
+      </div>
+    </footer>
+
+    <div class="whatsapp-cta" title="Chat on WhatsApp">
+      <i class="fab fa-whatsapp"><a href="http://wa.me/+919846014558"></a></i>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
